@@ -1,0 +1,142 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+    }
+    
+body{
+    font-family: 'Mulish';
+}
+
+span, .formSubmitButton{
+    color: #00aae2;
+
+}
+
+header > img{
+    width: 1rem;
+    height: 1rem;
+}
+
+ol, ul {
+	list-style: none;
+    display: block;
+}
+
+input{
+    display: block;
+    height: 2.5rem;
+}
+
+.navBarMenu{
+    font-size: 0.875rem;
+    color: #626366;
+
+}
+
+.waterImage{
+    background-image: url(https://www.altoastral.com.br/media/uploads/legacy/2016/12/crianca-brincando-agua.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 30vh;
+}   
+
+.menuProducts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+.menuImages > li{
+    display: flex;
+    margin: 1rem;
+    flex-direction: column;
+    width: 70%;
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 0.938rem;
+    font-weight: bold;
+    border: 1px solid #e2e2e2;
+}
+
+.menuIcon{
+    width: 3rem;
+    height: 3rem;
+
+}
+.menuButton > img{
+    display: flex;
+    background-color: transparent;
+    color: #626366;
+    width: 0.5rem;
+    height: 0.5rem;
+}
+.formSection{
+    display: flex;
+    flex-direction: column;
+      
+}
+
+.formSection1 .formSection2{
+    display: flex;
+    
+}
+
+.buttonFormContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.formSubmitButton{
+    border: 1px solid #00aae2;
+    padding: 1rem;
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.footerIcon{
+    width: 1rem;
+    height: 1rem;
+    filter: invert(100%)
+}
+
+.menuFooterSection1{
+    background-color: #222222;
+}
+
+.menuFooterSection2{
+    background-color: #383838;
+}
+.menuFooterSection3{
+    background-color: #565656;
+}
+.menuFooterSection4{
+    background-color: #686868;
+}
+
+.menuFooterSectionTitle{
+    color: #ffffff;
+    font-size: 0.875rem;
+}
+.menuFooterSection1, .menuFooterSection2, .menuFooterSection3, .menuFooterSection4{
+    list-style: none; 
+    font-size: 0.75rem;
+    color: #ffffff;
+    line-height: 2rem;
+    text-align: center;
+}
+     
+.logoFooter{
+    color:#ffffff;
+    font-size: 2rem;
+    
+}

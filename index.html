@@ -4,42 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Callwe</title>
 </head>
 <body>
     <header>
-        <p>Logo</p>
-        <ul>
+        <h1>Call<span>W</span>e</h1>
+        <img src="https://cdn-icons-png.flaticon.com/512/49/49116.png"/>
+        <span> Menu Sanduíche</span>
+        <ul class="navBarMenu">
             <li><a href="#">Cozinha</a></li>
             <li><a href="#">Banheiro</a></li>
             <li><a href="#">Lavanderia</a></li>
             <li><a href="#">Corporativo</a></li>
             <li><a href="#">Válvulas e registros</a></li>
-            <li><a href="#">Atendimento e suporte</a></li>
-            <span>Imagem Lupa</span>
-            <span> Menu Sanduíche</span>
+            <li><a href="#">Atendimento e suporte</a></li>           
         </ul>
     </header>
-    <div>
-        <p>Imagem menina</p>
+    <div class="waterImage">    
+        
     </div>
-    <section>
-        <ul>
-            <li>Produtos</li>
-            <li>Garantia</li>
-            <li>Assistência Técnica Autorizada</li>
-            <li>Tecnologias</li>
-            <li>Trabalhe Conosco</li>
-            <li>Projeto</li>
-            <li>Onde Encontrar</li>
-            <li>Cadastro Garantia Toda Vida</li>
+    <section class="menuProducts">
+        <ul class="menuImages">
+            <li>                
+                <img src="https://cdn-icons-png.flaticon.com/512/900/900661.png" class="menuIcon"/>
+                <p>Produtos</p>
+                <button type="menu" class="menuButton">
+                    Ver produtos
+                    <img src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png"/>
+                </button>
+            </li>
+            <li>                
+                <img src="https://cdn-icons-png.flaticon.com/512/5733/5733771.png" class="menuIcon"/>
+                <p>Garantia</p>
+                <button type="menu" class="menuButton">
+                    Ver produtos
+                    <img src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png"/>
+                </button>
+            </li>
+            <li>                
+                <img src="https://cdn-icons-png.flaticon.com/512/1321/1321686.png" class="menuIcon"/>
+                <p>Assistência Técnica Autorizada</p>
+                <button type="menu" class="menuButton">
+                    Ver produtos
+                    <img src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png"/>
+                </button>
+            </li>
+            <li>                
+                <img src="https://cdn-icons-png.flaticon.com/512/780/780477.png" class="menuIcon"/>
+                <p>Tecnologias</p>
+                <button type="menu" class="menuButton">
+                    Ver produtos
+                    <img src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png"/>
+                </button>
+            </li>
+            <li>               
+                <img src="https://cdn-icons-png.flaticon.com/512/7522/7522031.png" class="menuIcon"/>
+                <p>Trabalhe Conosco</p>
+                <button type="menu" class="menuButton">
+                    Ver produtos
+                    <img src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png"/>
+                </button>
+            </li>
+            <li>
+                <img src="https://cdn-icons-png.flaticon.com/512/1813/1813912.png" class="menuIcon"/>
+                <p>Projeto</p>
+                <button type="menu" class="menuButton">
+                    Ver produtos
+                    <img src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png"/>
+                </button>
+            </li>
+            <li>
+                <img src="https://cdn-icons-png.flaticon.com/512/2801/2801674.png" class="menuIcon"/>
+                <p>Onde Encontrar</p>
+                <button type="menu" class="menuButton">
+                    Ver produtos
+                    <img src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png"/>
+                </button>
+            </li>
+            <li>
+                <img src="https://cdn-icons-png.flaticon.com/512/3981/3981909.png" class="menuIcon"/>
+                <p>Cadastro Garantia Toda Vida</p>
+                <button type="menu" class="menuButton">
+                    Ver produtos
+                    <img src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png"/>
+                </button>
+            </li>
         </ul>
     </section>
     <section>
-        Carrossel Vídeos
+        <ul>
+            Videos
+        </ul>
     </section>
-    <form>
-        <div>
+    <section class="formSection">
+        <div class="formSection1">
             <label>Nome*</label>
             <input type="text">           
             <label>Telefone</label>
@@ -50,7 +112,7 @@
             <input type="text">
               
         </div>
-        <div>
+        <div class="formSection2">
             <label>Email*</label>
             <input type="email">
             <label>CEP*</label>
@@ -58,50 +120,47 @@
             <label>Número*</label>
             <input type="number">
             <label> Estado*</label>
-            <input type="text">  
-        <button type="submit">Envie sua solicitação</button>  
+            <input type="text">         
         </div>
-    </form>
-    <footer>
-        <div>
-            <p>Imagem</p>
-            
+        <div class="buttonFormContainer">
+            <button type="submit" class="formSubmitButton">Envie sua solicitação</button> 
         </div>
-        <div>
-            <p>Sobre a callwe</p>
-            <ul>
-                <li>Instagram Icon</li>
-                <li>Facebook Icon</li>
-                <li>Youtube Icon</li>
-                <li>Linkedin Icon</li>
+        
+    </section>
+    <footer>  
+     
+            <ul class="menuFooterSection1">
+                <p class="logoFooter">Call<span>w</span>e</p>
+                <li>SOBRE A CALLWE</li>
+                <li><img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" class="footerIcon"/></li>
+                <li><img src="https://cdn-icons-png.flaticon.com/512/20/20837.png" class="footerIcon"/></li>
+                <li><img src="https://cdn-icons-png.flaticon.com/512/3128/3128210.png" class="footerIcon"/></li>
+                <li><img src="https://cdn-icons-png.flaticon.com/128/61/61109.png" class="footerIcon"/></li>
             </ul>
-        </div>
-        <div>
-            <p>Produtos</p>
-            <ul>
+        
+            <ul class="menuFooterSection2">
+                <li>PRODUTOS</li>
                 <li>Banheiro</li>
                 <li>Cozinha</li>
                 <li>Lavanderia</li>
                 <li>Linkedin Icon</li>
             </ul>
-        </div>
-        <div>
-            <p>Suporte</p>
-            <ul>
+    
+            <ul class="menuFooterSection3">
+                <li>SUPORTE</li>
                 <li>Política de Qualidade</li>
                 <li>Garantia Toda Vida</li>
              
             </ul>
-        </div>
-        <div>
-            <p>Atendimento</p>
-            <ul>
+                    
+            <ul class="menuFooterSection4">
+                <li>ATENDIMENTO</li>
                 <li>Callwe Responde <br>
                 0000 000 000</li>
                 <li>Televendas <br>
                 0000 000 000</li>                    
             </ul>
-        </div>
+        
     </footer>
 </body>
 </html>
