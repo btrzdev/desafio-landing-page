@@ -3,19 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    
+    
     <title>Callwe</title>
 </head>
 <body>
     <header>
-        <h1>Call<span>W</span>e</h1>
-        <img src="https://cdn-icons-png.flaticon.com/512/49/49116.png"/>
-        <span> Menu Sanduíche</span>
-        <ul class="navBarMenu">
+        <div class="headerContainer"> 
+            <div>
+                <h1>Call<span>W</span>e</h1>
+            </div>
+            <div class="buttonsHeaderContainer">
+                <img src="https://cdn-icons-png.flaticon.com/512/49/49116.png" class="headerIcons"/>
+                <input type="button" class="menuButton" id="menuBarButton" onclick="hamburguerMenu()"/>  
+            </div> 
+            
+        </div>          
+        <ul class="navBarMenu" id="navBarMenuId">
             <li><a href="#">Cozinha</a></li>
             <li><a href="#">Banheiro</a></li>
             <li><a href="#">Lavanderia</a></li>
@@ -33,7 +42,7 @@
                 <img src="https://cdn-icons-png.flaticon.com/512/900/900661.png" class="menuIcon"/>
                 <p>Produtos</p>
                 <button type="menu" class="menuButton">
-                    Ver produtos
+                    <span>Ver produtos</span>
                     <img src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png"/>
                 </button>
             </li>
@@ -41,7 +50,7 @@
                 <img src="https://cdn-icons-png.flaticon.com/512/5733/5733771.png" class="menuIcon"/>
                 <p>Garantia</p>
                 <button type="menu" class="menuButton">
-                    Ver produtos
+                    <span>Ver produtos</span>
                     <img src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png"/>
                 </button>
             </li>
@@ -49,7 +58,7 @@
                 <img src="https://cdn-icons-png.flaticon.com/512/1321/1321686.png" class="menuIcon"/>
                 <p>Assistência Técnica Autorizada</p>
                 <button type="menu" class="menuButton">
-                    Ver produtos
+                    <span>Ver produtos</span>
                     <img src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png"/>
                 </button>
             </li>
@@ -57,7 +66,7 @@
                 <img src="https://cdn-icons-png.flaticon.com/512/780/780477.png" class="menuIcon"/>
                 <p>Tecnologias</p>
                 <button type="menu" class="menuButton">
-                    Ver produtos
+                    <span>Ver produtos</span>
                     <img src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png"/>
                 </button>
             </li>
@@ -65,7 +74,7 @@
                 <img src="https://cdn-icons-png.flaticon.com/512/7522/7522031.png" class="menuIcon"/>
                 <p>Trabalhe Conosco</p>
                 <button type="menu" class="menuButton">
-                    Ver produtos
+                    <span>Ver produtos</span>
                     <img src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png"/>
                 </button>
             </li>
@@ -73,7 +82,7 @@
                 <img src="https://cdn-icons-png.flaticon.com/512/1813/1813912.png" class="menuIcon"/>
                 <p>Projeto</p>
                 <button type="menu" class="menuButton">
-                    Ver produtos
+                    <span>Ver produtos</span>
                     <img src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png"/>
                 </button>
             </li>
@@ -81,7 +90,7 @@
                 <img src="https://cdn-icons-png.flaticon.com/512/2801/2801674.png" class="menuIcon"/>
                 <p>Onde Encontrar</p>
                 <button type="menu" class="menuButton">
-                    Ver produtos
+                    <span>Ver produtos</span>
                     <img src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png"/>
                 </button>
             </li>
@@ -89,16 +98,22 @@
                 <img src="https://cdn-icons-png.flaticon.com/512/3981/3981909.png" class="menuIcon"/>
                 <p>Cadastro Garantia Toda Vida</p>
                 <button type="menu" class="menuButton">
-                    Ver produtos
+                    <span>Ver produtos</span>
                     <img src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png"/>
                 </button>
             </li>
         </ul>
     </section>
-    <section>
-        <ul>
-            Videos
-        </ul>
+    <section class="videosSection">
+        <iframe width="210" height="160"
+        src="https://www.youtube.com/embed/kLoiOehieeM">
+        </iframe>   
+        <iframe width="210" height="160"
+        src="https://www.youtube.com/embed/kLoiOehieeM">
+        </iframe> 
+        <iframe width="210" height="160"
+        src="https://www.youtube.com/embed/kLoiOehieeM">
+        </iframe>     
     </section>
     <section class="formSection">
         <div class="formSection1">
@@ -162,5 +177,6 @@
             </ul>
         
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
