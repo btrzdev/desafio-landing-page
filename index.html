@@ -115,33 +115,33 @@
         src="https://www.youtube.com/embed/kLoiOehieeM">
         </iframe>     
     </section>
-    <section class="formSection">
+    <form class="formSection">
         <div class="formSection1">
             <label>Nome*</label>
-            <input type="text">           
+            <input type="text" >           
             <label>Telefone</label>
             <input type="tel">           
             <label>Endereço*</label>
-            <input type="text">            
+            <input type="text" id="addressID">            
             <label> Cidade*</label>
-            <input type="text">
+            <input type="text" id="cityID">
               
         </div>
         <div class="formSection2">
             <label>Email*</label>
             <input type="email">
             <label>CEP*</label>
-            <input type="number">
+            <input type="text"  id="cepID" onchange="consultCEP()">
             <label>Número*</label>
-            <input type="number">
+            <input type="number"  id="numberID">
             <label> Estado*</label>
-            <input type="text">         
+            <input type="text"  id="stateID">         
         </div>
         <div class="buttonFormContainer">
-            <button type="submit" class="formSubmitButton">Envie sua solicitação</button> 
+            <button type="submit" class="formSubmitButton">ENVIE SUA SOLICITAÇÃO</button> 
         </div>
         
-    </section>
+    </form>
     <footer>  
      
             <ul class="menuFooterSection1">

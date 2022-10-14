@@ -103,6 +103,7 @@ input{
     border: 1px solid #e2e2e2;
 }
 
+
 .menuIcon{
     width: 3rem;
     height: 3rem;
@@ -121,6 +122,10 @@ input{
     display: flex;
     width: 1.0rem;
     height: 1.0rem;
+
+}
+.menuButton:hover{
+    cursor: pointer;
 }
 
 .videosSection{
