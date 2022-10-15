@@ -36,9 +36,16 @@ input{
     justify-content: space-between;
     padding: 1rem;
 }
+
 .buttonsHeaderContainer{
     display: flex;
+    align-items: center;
     
+}
+
+.buttonsHeaderContainer > img{
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .headerIcons{
@@ -55,22 +62,28 @@ input{
 
 }
 
-.navBarMenuDeactive{
+.navBarMenuDesktop{
     display: none;
 }
 
-.navBarMenu, .navBarMenu > li > a{
+.navBarMenuChangeDisplay, .navBarMenuChangeDisplay > li > a{
     display: block;
     text-decoration: none;
     color: #626366;
     font-size: 0.875rem;
 }
-.navBarMenu > li > a:hover{
+
+.navBarMenuChangeDisplay > li > a:hover{
     text-decoration: none;
     color: #ffffff;
     background-color: #626366;
     font-size: 0.875rem;
 }
+
+.navBarMenu, .navBarMenu > li > a{
+    display: none;   
+}
+
 
 .waterImage{
     background-image: url(https://www.altoastral.com.br/media/uploads/legacy/2016/12/crianca-brincando-agua.jpg);
@@ -164,7 +177,7 @@ input{
     filter: invert(100%)
 }
 
-.menuFooterSection1{
+.menuFooterSection1, .socialMediaFooter{
     background-color: #222222;
 }
 
@@ -194,4 +207,117 @@ input{
     color:#ffffff;
     font-size: 2rem;
     
+}
+
+@media only screen and (min-width: 768px) {
+
+
+
+.headerContainer{
+    display: flex;
+    align-items: center;
+
+}
+.navBarMenuDesktop{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 12rem;
+    text-decoration: none;
+    color: #626366;
+    gap: 1rem;
+}
+.navBarMenuDesktop > li > a{
+    text-decoration: none;
+    color: #626366;
+    font-size: 00.875rem;
+}
+
+.buttonsHeaderContainer{
+    display: flex;  
+    margin-bottom: 1rem;
+    
+}
+
+.buttonsHeaderContainer > img{    
+    margin-top:2rem;
+    width: 2rem;
+    height: 2rem;   
+      
+}
+
+.navBarMenu{
+    display: none;
+}
+.waterImage{
+    height: 20rem;
+    background-size: 100%;
+    background-position-y: -10vh;
+}
+
+.footerContainer{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.socialMediaFooter{
+    width: 20vw;
+    padding: 2rem;  
+
+}
+
+.socialMediaFooter > p {
+    margin: 2rem;
+}
+.socialMediaFooter > ul {  
+    display: flex;
+    justify-content: space-around;  
+}
+
+.menuFooterSection1, .menuFooterSection2, .menuFooterSection3 {
+    width: 15vw;
+    margin: 0;
+    padding: 2rem;
+}
+
+.menuFooterSection4{
+    align-items: flex-start;
+    width: 35vw;
+    padding: 2rem;
+}
+
+.menuProducts{
+    width: 100vw;
+}
+
+.menuImages{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70rem;
+    margin: 1rem;
+    justify-content: center;
+}
+
+.menuImages > li{
+    font-size: 0.8rem;
+    width: 10rem;
+    height: 11rem;
+}
+
+.menuImages > p{
+    display: inline-block;
+    height: 4rem;
+}
+
+.menuIcon{
+    width: 6rem;
+    height: 6rem;
+}
+
+.menuButton{
+    margin-top: 2rem;
+    font-size: 0.75rem;
+}
+
+
 }

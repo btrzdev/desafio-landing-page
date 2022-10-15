@@ -4,10 +4,10 @@ const hamburguerMenu = () => {
 
     if (navBarMenu.classList[0]=== "navBarMenu") {
         navBarMenu.classList.remove("navBarMenu")
-        navBarMenu.classList.add("navBarMenuDeactive")        
+        navBarMenu.classList.add("navBarMenuChangeDisplay")        
     } else {
         navBarMenu.classList.add("navBarMenu")
-        navBarMenu.classList.remove("navBarMenuDeactive")
+        navBarMenu.classList.remove("navBarMenuChangeDisplay")
     }
 }
 
