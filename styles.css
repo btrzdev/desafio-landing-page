@@ -13,6 +13,7 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 span {
@@ -34,6 +35,10 @@ input {
     height: 2.5rem;
 }
 
+h3 {
+    margin: 1rem;
+    color: #626366;
+}
 
 .headerContainer {
     display: flex;
@@ -44,8 +49,7 @@ input {
 
 .buttonsHeaderContainer {
     display: flex;
-    align-items: center;
-    
+    align-items: center;    
 }
 
 .buttonsHeaderContainer > img {
@@ -70,6 +74,10 @@ input {
     display: none;
 }
 
+.navBarMenu, .navBarMenu > li > a {
+    display: none;   
+}
+
 .navBarMenuChangeDisplay, .navBarMenuChangeDisplay > li > a {
     display: block;
     text-decoration: none;
@@ -84,11 +92,6 @@ input {
     font-size: 0.875rem;
 }
 
-.navBarMenu, .navBarMenu > li > a {
-    display: none;   
-}
-
-
 .waterImage {
     background-image: url(https://www.apexhoodcleaning.com/wp-content/uploads/2021/11/Commercial-Hood-Repair-1.jpg);
     background-repeat: no-repeat;
@@ -101,10 +104,8 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-   
+    align-items: center;   
 }
-
 
 .menuImages > li {
     display: flex;
@@ -119,7 +120,6 @@ input {
     font-weight: bold;
     border: 1px solid #e2e2e2;
 }
-
 
 .menuIcon {
     width: 3rem;
@@ -141,7 +141,6 @@ input {
     display: flex;
     width: 1.0rem;
     height: 1.0rem;
-
 }
 
 .menuButton:hover {
@@ -153,17 +152,13 @@ input {
     font-size: 0.7rem;
     text-align: center;
     font-weight: normal;
-    width: 10rem;
-   
+    width: 10rem;   
 
 }
 
 .moreDetailsDeactive {    
-    display: none;
-    
-
+    display: none;  
 }
-
 
 .videosSection {
     display: flex;
@@ -172,11 +167,59 @@ input {
     gap: 1rem;
 }
 
+.slider {
+    display: flex;
+    justify-content: center;
+    width: 20rem;
+    overflow: hidden;
+}
+
+.sliderVideo {
+    display: flex;
+    height: 15rem;
+    width: 100%;
+    overflow: hidden;   
+    scroll-behavior: smooth;
+}
+
+.video {
+    width: 100%;
+    margin: 0;
+
+}
+.video > iframe {
+    width: 17rem;
+    height: 13rem;
+}
+
+.buttonSliderContainer {
+    display: flex;
+    align-items: center;
+}
+
+.nextArrowButton {
+    background: url(https://cdn-icons-png.flaticon.com/512/271/271228.png) no-repeat;   
+}
+
+.prevArrowButton {    
+    background: url(https://cdn-icons-png.flaticon.com/512/271/271220.png) no-repeat;       
+}
+
+.nextArrowButton, .prevArrowButton {
+    width: 2rem;
+    height: 2rem;
+    background-size: 80%;
+}
+
+.nextArrowButton, .prevArrowButton:hover{
+    cursor: pointer;
+}
+
 .formSection {
     display: flex;
     width: 100vw;
+    color: #626366;
 }
-
 
 .inputGroup > div > input {
     width: 20rem;
@@ -187,7 +230,13 @@ input {
     margin: 1rem
 }
 
-.inputGroupAddress{
+.inputGroupAddress {
+    margin: 1rem;    
+    color: #626366;
+}
+
+.inputGroupAddress > div > input {
+    width: 20rem;
     margin: 1rem;
 }
 
@@ -211,7 +260,7 @@ input {
 .footerIcon {
     width: 1rem;
     height: 1rem;
-    filter: invert(100%)
+    filter: invert(100%);
 }
 
 .socialMediaFooter {
@@ -245,84 +294,33 @@ input {
     line-height: 2rem;
     text-align: center;
 }
-     
+
+.footer {
+    width: 100vw;
+}
+
 .logoFooter {
     color:#ffffff;
-    font-size: 2rem;
-    
+    font-size: 2rem;    
 }
 
 .logoFooter > ul {
     gap: 1rem;
 }
 
-.footer {
-    width: 100vw;
-}
-
 .footerContainer {
     width: 100vw;
 }
 
-.slider {
-    display: flex;
-    justify-content: center;
-    width: 20rem;
-    overflow: hidden;
-}
-
-.sliderVideo{
-    display: flex;
-    height: 15rem;
-    width: 100%;
-    overflow: hidden;   
-    scroll-behavior: smooth;
-}
-
-.video {
-    width: 100%;
-    height: 14rem;
-    margin: 0;
-
-}
-.video > iframe {
-    width: 17rem;
-    height: 13rem;
-}
-
-.buttonSliderContainer {
-    display: flex;
-    align-items: center;
-}
-
-.nextArrowButton {
-    background: url(https://cdn-icons-png.flaticon.com/512/271/271228.png) no-repeat;   
-}
-
-.prevArrowButton {    
-    background: url(https://cdn-icons-png.flaticon.com/512/271/271220.png) no-repeat;       
-}
-
-.nextArrowButton, .prevArrowButton {
-    width: 2rem;
-    height: 2rem;
-    background-size: 80%;
-}
-
-.nextArrowButton, .prevArrowButton:hover{
-    cursor: pointer;
-}
 
 @media only screen and (min-width: 768px) {
 
-
-
-.headerContainer{
+.headerContainer {
     display: flex;
     align-items: center;
 
 }
-.navBarMenuDesktop{
+.navBarMenuDesktop {
     display: flex;
     justify-content: space-around;
     margin-left: 5rem;
@@ -330,13 +328,13 @@ input {
     color: #626366;
     gap: 1rem;
 }
-.navBarMenuDesktop > li > a{
+.navBarMenuDesktop > li > a {
     text-decoration: none;
     color: #626366;
     font-size: 00.875rem;
 }
 
-.buttonsHeaderContainer{
+.buttonsHeaderContainer {
     display: flex;  
     margin-bottom: 1rem;
     
@@ -345,23 +343,160 @@ input {
 .buttonsHeaderContainer > input {
     display: none;
 }
-.buttonsHeaderContainer > img{    
+.buttonsHeaderContainer > img {    
     margin-top:2rem;
     width: 2rem;
     height: 2rem;   
       
 }
 
-.navBarMenu{
+.navBarMenu {
     display: none;
 }
-.waterImage{
+.waterImage {
     height: 20rem;
     background-size: 100%;
     background-position-y: -20vh;
 }
 
-.footerContainer{
+.menuProducts {
+    width: 100vw;
+}
+
+.menuImages {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70rem;
+    margin: 1rem;
+    justify-content: center;
+}
+
+.menuImages > li {
+    display: inline-flex;
+    height: min-content;
+    font-size: 0.8rem;
+    width: 10rem;
+    height: 11rem;
+}
+
+.menuImages > p {
+    display: inline-block;
+    height: 4rem;
+}
+
+.menuIcon {
+    width: 6rem;
+    height: 6rem;
+}
+
+.menuButton {
+    margin-top: 2rem;
+    font-size: 0.75rem;
+}
+
+.slider {
+    width: 56rem;
+    height: 20rem
+}
+
+.video > iframe {
+    width: 26.25rem;
+    height: 20rem;
+    margin: 0.5rem;
+}
+
+.formContainer { 
+    width: 100%
+}
+
+.formSection {
+    display: flex;  
+    justify-content: center;
+    margin: 2rem;
+}
+
+.inputGroup > div {
+    color: #626366;
+}
+
+.inputGroup > div > input, .inputAddress, .inputNumber {
+    border-color: #626366;
+    color: #626366;
+    height: 2rem;
+    margin: 1rem;
+    border-width: 1px;   
+    border-style: solid;
+
+}
+
+.inputGroup > div > input {
+    display: block;
+    width: 20rem;
+}
+
+.inputAddress {
+    width: 30rem;    
+}
+
+.inputNumber {
+    margin-left: 0;    
+}
+
+.formSection > label {
+    display: block;
+    width: 10rem;
+}
+
+.formSubmitButton {
+    width: 15rem;
+    height: 2.5rem;
+    padding: 0.5rem;    
+}
+
+.inputNumberContainer {
+    display: flex;  
+    height: 100%;
+    flex-direction: unset;
+    align-items: center;
+   
+}
+
+.inputAddressContainer {
+    width: 80%;
+    display: flex;
+    width: 30rem;
+}
+
+.inputAddressContainer > input {
+    width: 20rem;
+}
+
+.inputGroup {
+    display: flex;
+}
+
+.inputGroup > div > label {
+    margin: 0;
+}
+.inputGroup > div {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.inputGroup > div > input {
+    margin: 1rem;
+    margin-top: 0;
+    
+}
+
+.inputGroupAddress {
+    display: flex;
+    margin: 0rem;
+    justify-content: space-between;
+}
+
+.footerContainer {
     display: flex;
     flex-direction: row;
     max-width: 100vw;
@@ -373,7 +508,7 @@ input {
     height: 1.5rem;
 }
 
-.socialMediaFooter{
+.socialMediaFooter {
     width: 20vw;
     padding: 2rem;  
 
@@ -393,140 +528,11 @@ input {
     padding: 2rem;
 }
 
-.menuFooterSection4{
+.menuFooterSection4 {
     align-items: flex-start;
     width: 33vw;
     padding: 2rem;
 }
 
-.menuProducts{
-    width: 100vw;
-}
-
-.menuImages{
-    display: flex;
-    flex-wrap: wrap;
-    width: 70rem;
-    margin: 1rem;
-    justify-content: center;
-}
-
-.menuImages > li{
-    font-size: 0.8rem;
-    width: 10rem;
-    height: 11rem;
-}
-
-.menuImages > p{
-    display: inline-block;
-    height: 4rem;
-}
-
-.menuIcon{
-    width: 6rem;
-    height: 6rem;
-}
-
-.menuButton{
-    margin-top: 2rem;
-    font-size: 0.75rem;
-}
-
-.formContainer{
-    width: 100%
-}
-
-
-.formSection{
-    display: flex;  
-    justify-content: center;
-    margin: 2rem;
-}
-
-.inputGroup > div {
-    color: #626366;
-}
-    
-
-.inputGroup > div > input {
-    display: block;
-    border-color: #626366;
-    color: #626366;
-    width: 20rem;
-    height: 2rem;
-    margin: 1rem;
-    border-width: 1px;   
-    border-style: solid;
-}
-
-
-.inputAddress, .inputNumber {
-    border-color: #626366;
-    color: #626366;
-    height: 2rem;
-    margin: 1rem;
-    border-width: 1px;   
-    border-style: solid;
-}
-
-.inputAddress {
-    width: 30rem;    
-}
-
-.inputNumber {
-    margin-left: 0;    
-}
-
-.formSection > label{
-    display: block;
-    width: 10rem;
-}
-
-.formSubmitButton{
-    width: 15rem;
-    height: 2.5rem;
-    padding: 0.5rem;    
-}
-
-.inputNumberContainer {
-    display: flex;  
-    height: 100%;
-    flex-direction: unset;
-    align-items: center;
-   
-}
-
-.inputAddressContainer{
-    width: 80%;
-    display: flex;
-    width: 30rem;
-}
-
-.inputAddressContainer > input {
-    width: 20rem;
-}
-
-.inputGroup {
-    display: flex;
-}
-.inputGroup > div {
-    display: flex;
-    flex-direction: column;
-}
-
-.inputGroupAddress {
-    display: flex;
-    margin: 0;
-    justify-content: space-between;
-}
-
-.slider {
-    width: 56rem;
-}
-
-.video > iframe {
-    width: 26.25rem;
-    height: 20rem;
-}
 
 }
