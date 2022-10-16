@@ -18,30 +18,17 @@ preventDefaultFormButton.addEventListener("click", function(event){
 }) }
 
 
-
 const consultCEP = () => {  
-    const cepInput = document.getElementById("cepID").value
-    let addressInput = document.getElementById("addressID").value
-    let cityInput = document.getElementById("cityID").value
-    let stateInput = document.getElementById("stateID").value
-
-    
+    const cepInput = document.getElementById("cepID").value    
+      
     fetch(`https://viacep.com.br/ws/${cepInput}/json/`, {headers: {}})
     .then(response => response.json())
-    .then(data =>(    
-          
-         addressInput = `${data.logradouro} - ${data.bairro}`,
-         console.log(addressInput),
-         cityInput = `${data.localidade}`,
-         console.log(cityInput),      
-         stateInput = `${data.uf}` ,
-         console.log(stateInput)      
-
+    .then(data =>(           
+         document.getElementById("addressID").value= `${data.logradouro} - ${data.bairro}`,        
+         document.getElementById("cityID").value = `${data.localidade}`,             
+         document.getElementById("stateID").value = `${data.uf}`
         )                      
     ).catch((err) => console.log(err))
-
-    
-    
 }
 
 
