@@ -17,10 +17,7 @@ body{
 
 span{
     color: #00aae2;
-
 }
-
-
 
 header > img{
     width: 1rem;
@@ -29,7 +26,7 @@ header > img{
 
 ol, ul {
 	list-style: none;
-    display: block;
+    
 }
 
 input{
@@ -67,7 +64,6 @@ input{
     height: 3rem;
     background: url(https://cdn-icons-png.flaticon.com/512/8106/8106944.png) no-repeat;
     background-size: 80%;
-
 }
 
 .navBarMenuDesktop{
@@ -94,7 +90,7 @@ input{
 
 
 .waterImage{
-    background-image: url(https://www.altoastral.com.br/media/uploads/legacy/2016/12/crianca-brincando-agua.jpg);
+    background-image: url(https://www.apexhoodcleaning.com/wp-content/uploads/2021/11/Commercial-Hood-Repair-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
@@ -265,6 +261,9 @@ input{
     
 }
 
+.buttonsHeaderContainer > input {
+    display: none;
+}
 .buttonsHeaderContainer > img{    
     margin-top:2rem;
     width: 2rem;
@@ -278,14 +277,13 @@ input{
 .waterImage{
     height: 20rem;
     background-size: 100%;
-    background-position-y: -10vh;
+    background-position-y: -20vh;
 }
 
 .footerContainer{
     display: flex;
     flex-direction: row;
     max-width: 100vw;
-    
 }
 
 .footerIcon {
@@ -362,7 +360,6 @@ input{
     display: flex;  
     justify-content: center;
     margin: 2rem;
-    
 }
 
 .inputGroup > div {
@@ -379,12 +376,10 @@ input{
     margin: 1rem;
     border-width: 1px;   
     border-style: solid;
-
 }
 
 .inputGroupAddress {
     display: flex;
-
 }
 
 .inputAddress, .inputNumber {
@@ -397,18 +392,16 @@ input{
 }
 
 .inputAddress {
-    width: 30rem;
-    
+    width: 30rem;    
 }
 
 .inputNumber {
-    margin-left: 0;
-    
+    margin-left: 0;    
 }
+
 .formSection > label{
     display: block;
     width: 10rem;
-
 }
 
 .formSubmitButton{
@@ -448,8 +441,51 @@ input{
     justify-content: space-between;
 }
 
+.slider {
+    display: flex;
+    margin: 1rem;
+    width: 56rem;
+    overflow: hidden;
+}
 
+.sliderVideo{
+    display: flex;
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;   
+    scroll-behavior: smooth;
+}
 
+.video {
+    width: 100%;
+    height: 100%;
+    margin: 1rem;
+
+}
+
+.buttonSliderContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nextArrowButton {
+    background: url(https://cdn-icons-png.flaticon.com/512/271/271228.png) no-repeat;   
+}
+
+.prevArrowButton {    
+    background: url(https://cdn-icons-png.flaticon.com/512/271/271220.png) no-repeat;       
+}
+
+.nextArrowButton, .prevArrowButton {
+    width: 3rem;
+    height: 3rem;
+    background-size: 80%;
+}
+
+.nextArrowButton, .prevArrowButton:hover{
+    cursor: pointer;
+}
 
 
 }

@@ -32,3 +32,21 @@ const consultCEP = () => {
 }
 
 
+const sliderVideoContainer = document.getElementById("sliderVideoContainer");
+const videoSlide = document.querySelector(".video");
+const prevVideosArrow = document.getElementById("prevVideosArrow");
+const nextVideosArrow = document.getElementById("nextVideosArrow");
+
+nextVideosArrow.addEventListener("click", () => {
+  const slideWidth = videoSlide.clientWidth;
+  sliderVideoContainer.scrollLeft += slideWidth;
+});
+
+prevVideosArrow.addEventListener("click", () => {
+  const slideWidth = videoSlide.clientWidth;
+  sliderVideoContainer.scrollLeft -= slideWidth;
+});
+
+
+
+
