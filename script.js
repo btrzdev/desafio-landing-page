@@ -50,3 +50,23 @@ prevVideosArrow.addEventListener("click", () => {
 
 
 
+document.addEventListener("click",function(event){
+let eventId = event.target.id
+
+let elementToChange = document.getElementById(`moreDetails${eventId}`)
+
+if(elementToChange.classList[0] === "moreDetailsActive"){
+    elementToChange.classList.add("moreDetailsDeactive")
+    elementToChange.classList.remove("moreDetailsActive")
+} else if (elementToChange.classList[0] === "moreDetailsDeactive"){
+    elementToChange.classList.add("moreDetailsActive")
+    elementToChange.classList.remove("moreDetailsDeactive")
+}
+  
+   
+})
+
+
+
+
+
