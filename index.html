@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+   
     
     
     <title>Callwe</title>
@@ -31,7 +32,7 @@
             </div>
             <div class="buttonsHeaderContainer">
                 <img src="https://cdn-icons-png.flaticon.com/512/49/49116.png" class="headerIcons"/>
-                <input type="button" class="menuButton" id="menuBarButton" onclick="hamburguerMenu()"/>  
+                <input type="button" class="menuButton" id="menuBarButton" onclick="hamburguerMenuMobile()"/>  
             </div> 
             
         </div>          
@@ -114,44 +115,57 @@
             </li>
         </ul>
     </section>
-    <section class="videosSection">
-        <iframe width="210" height="160"
-        src="https://www.youtube.com/embed/kLoiOehieeM">
-        </iframe>   
-        <iframe width="210" height="160"
-        src="https://www.youtube.com/embed/kLoiOehieeM">
-        </iframe> 
-        <iframe width="210" height="160"
-        src="https://www.youtube.com/embed/kLoiOehieeM">
-        </iframe>     
+    
+    </section class=formContainer>
+        <h3>Enviar solicitação</h3>
+        <form class="formSection">        
+            <div>
+                <div class="inputGroup">
+                    <div>
+                        <label>Nome*</label>
+                        <input type="text"> 
+                    </div>
+                    <div>
+                        <label>Email*</label>
+                        <input type="email">
+                    </div>                  
+                </div>
+                <div class="inputGroup">
+                    <div>
+                        <label>Telefone</label>
+                        <input type="tel">
+                    </div>
+                    <div>
+                        <label>CEP*</label>
+                        <input type="text"  id="cepID" onchange="consultCEP()"> 
+                    </div>                 
+                </div>
+                <div class="inputGroupAddress">
+                    <div>
+                        <label>Endereço*</label>
+                        <input  class="inputAddress" type="text" id="addressID">
+                    </div>
+                    <div>
+                        <label>Número*</label>
+                        <input class="inputNumber" type="number"  id="numberID"> 
+                    </div> 
+                </div>                
+                <div class="inputGroup">
+                    <div>
+                        <label> Cidade*</label>
+                        <input type="text" id="cityID">
+                    </div>
+                    <div>
+                        <label> Estado*</label>
+                        <input type="text"  id="stateID">
+                    </div>
+                </div>     
+            </div>    
+        </form>
     </section>
-    <form class="formSection">
-        <div class="formSection1">
-            <label>Nome*</label>
-            <input type="text" >           
-            <label>Telefone</label>
-            <input type="tel">           
-            <label>Endereço*</label>
-            <input type="text" id="addressID">            
-            <label> Cidade*</label>
-            <input type="text" id="cityID">
-              
-        </div>
-        <div class="formSection2">
-            <label>Email*</label>
-            <input type="email">
-            <label>CEP*</label>
-            <input type="text"  id="cepID" onchange="consultCEP()">
-            <label>Número*</label>
-            <input type="number"  id="numberID">
-            <label> Estado*</label>
-            <input type="text"  id="stateID">         
-        </div>
-        <div class="buttonFormContainer">
-            <button type="submit" class="formSubmitButton">ENVIE SUA SOLICITAÇÃO</button> 
-        </div>
-        
-    </form>
+    <div class="buttonFormContainer">
+        <button type="submit" class="formSubmitButton">ENVIE SUA SOLICITAÇÃO</button> 
+    </div>
     <footer>
         <div class="footerContainer">
             <div class="socialMediaFooter">
@@ -198,5 +212,6 @@
         </div>                 
     </footer>
     <script src="script.js"></script>
+   
 </body>
 </html>

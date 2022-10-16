@@ -8,9 +8,14 @@
     
 body{
     font-family: 'Mulish';
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
-span, .formSubmitButton{
+span{
     color: #00aae2;
 
 }
@@ -33,8 +38,9 @@ input{
 
 .headerContainer{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 1rem;
+    gap: 4rem;
 }
 
 .buttonsHeaderContainer{
@@ -149,24 +155,28 @@ input{
 }
 .formSection{
     display: flex;
-    flex-direction: column;
-      
+    width: 100vw;
 }
 
-.formSection1 .formSection2{
-    display: flex;
-    
+
+.inputGroup > div > input {
+    width: 20rem;
+    margin: 1rem;
 }
 
 .buttonFormContainer{
     display: flex;
-    flex-direction: column;
-    align-items: center;   
+    justify-content: center;
 }
 
 .formSubmitButton{
-    border: 1px solid #00aae2;
-    padding: 1rem;
+    border: 2px solid #00aae2;
+    font-weight: bold;
+    color:#00aae2;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    padding: 0.5rem;
     width: 90%;
     margin-bottom: 1rem;
 }
@@ -176,7 +186,11 @@ input{
     height: 1rem;
     filter: invert(100%)
 }
-
+.socialMediaFooter {
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+}
 .menuFooterSection1, .socialMediaFooter{
     background-color: #222222;
 }
@@ -203,12 +217,23 @@ input{
     text-align: center;
 }
      
-.logoFooter{
+.logoFooter {
     color:#ffffff;
     font-size: 2rem;
     
 }
 
+.logoFooter > ul {
+    gap: 1rem;
+}
+
+.footer {
+    width: 100vw;
+}
+
+.footerContainer {
+    width: 100vw;
+}
 @media only screen and (min-width: 768px) {
 
 
@@ -221,7 +246,7 @@ input{
 .navBarMenuDesktop{
     display: flex;
     justify-content: space-around;
-    margin-left: 12rem;
+    margin-left: 5rem;
     text-decoration: none;
     color: #626366;
     gap: 1rem;
@@ -257,7 +282,14 @@ input{
 .footerContainer{
     display: flex;
     flex-direction: row;
+    max-width: 100vw;
     
+}
+
+.footerIcon {
+    margin: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .socialMediaFooter{
@@ -282,7 +314,7 @@ input{
 
 .menuFooterSection4{
     align-items: flex-start;
-    width: 35vw;
+    width: 33vw;
     padding: 2rem;
 }
 
@@ -318,6 +350,104 @@ input{
     margin-top: 2rem;
     font-size: 0.75rem;
 }
+
+.formContainer{
+    width: 100%
+}
+
+
+.formSection{
+    display: flex;  
+    justify-content: center;
+    margin: 2rem;
+    
+}
+
+.inputGroup > div {
+    color: #626366;
+}
+    
+
+.inputGroup > div > input {
+    display: block;
+    border-color: #626366;
+    color: #626366;
+    width: 20rem;
+    height: 2rem;
+    margin: 1rem;
+    border-width: 1px;   
+    border-style: solid;
+
+}
+
+.inputGroupAddress {
+    display: flex;
+
+}
+
+.inputAddress, .inputNumber {
+    border-color: #626366;
+    color: #626366;
+    height: 2rem;
+    margin: 1rem;
+    border-width: 1px;   
+    border-style: solid;
+}
+
+.inputAddress {
+    width: 30rem;
+    
+}
+
+.inputNumber {
+    margin-left: 0;
+    
+}
+.formSection > label{
+    display: block;
+    width: 10rem;
+
+}
+
+.formSubmitButton{
+    width: 15rem;
+    height: 2.5rem;
+    padding: 0.5rem;    
+}
+
+.inputNumberContainer {
+    display: flex;  
+    height: 100%;
+    flex-direction: unset;
+    align-items: center;
+   
+}
+
+.inputAddressContainer{
+    width: 80%;
+    display: flex;
+    width: 30rem;
+}
+
+.inputAddressContainer > input {
+    width: 20rem;
+}
+
+.inputGroup {
+    display: flex;
+}
+.inputGroup > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputGroupAddress {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
 
 
 }

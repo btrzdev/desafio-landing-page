@@ -1,4 +1,4 @@
-const hamburguerMenu = () => {
+const hamburguerMenuMobile = () => {
     let navBarMenu = document.getElementById("navBarMenuId"); 
     navBarMenu.classList.add("navBarMenu")
 
@@ -11,6 +11,13 @@ const hamburguerMenu = () => {
     }
 }
 
+const preventDefaultFormButton = () => { 
+document.getElementsByClassName("formSubmitButton")
+preventDefaultFormButton.addEventListener("click", function(event){
+    event.preventDefault()
+}) }
+
+
 
 const consultCEP = () => {  
     const cepInput = document.getElementById("cepID").value
@@ -18,14 +25,17 @@ const consultCEP = () => {
     let cityInput = document.getElementById("cityID").value
     let stateInput = document.getElementById("stateID").value
 
-    console.log(cepInput)
+    
     fetch(`https://viacep.com.br/ws/${cepInput}/json/`, {headers: {}})
     .then(response => response.json())
     .then(data =>(    
           
          addressInput = `${data.logradouro} - ${data.bairro}`,
+         console.log(addressInput),
          cityInput = `${data.localidade}`,
-         stateInput = `${data.uf}`         
+         console.log(cityInput),      
+         stateInput = `${data.uf}` ,
+         console.log(stateInput)      
 
         )                      
     ).catch((err) => console.log(err))
