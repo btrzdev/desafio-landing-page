@@ -53,6 +53,8 @@ prevVideosArrow.addEventListener("click", () => {
 document.addEventListener("click",function(event){
 let eventId = event.target.id
 
+if (!eventId){ return}
+
 let elementToChange = document.getElementById(`moreDetails${eventId}`)
 
 if(elementToChange.classList[0] === "moreDetailsActive"){
@@ -61,8 +63,7 @@ if(elementToChange.classList[0] === "moreDetailsActive"){
 } else if (elementToChange.classList[0] === "moreDetailsDeactive"){
     elementToChange.classList.add("moreDetailsActive")
     elementToChange.classList.remove("moreDetailsDeactive")
-}
-  
+} 
    
 })
 
