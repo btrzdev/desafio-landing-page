@@ -240,7 +240,8 @@ h3 {
 }
 
 .inputGroupAddress > div > input {
-    margin: 1rem;
+    margin: 0.5rem;
+    width: 80%;
 }
 
 .buttonFormContainer {
