@@ -74,22 +74,24 @@ h3 {
     display: none;
 }
 
-.navBarMenu, .navBarMenu > li > a {
+.navBarMenu, 
+.navBarMenu > li > a {
     display: none;   
 }
 
-.navBarMenuChangeDisplay, .navBarMenuChangeDisplay > li > a {
+.navBarMenuChangeDisplay, 
+.navBarMenuChangeDisplay > li > a {
     display: block;
-    text-decoration: none;
-    color: #626366;
+    text-decoration: none;    
     font-size: 0.875rem;
+    color: #626366;
 }
 
 .navBarMenuChangeDisplay > li > a:hover {
-    text-decoration: none;
+    text-decoration: none;   
+    font-size: 0.875rem;
     color: #ffffff;
     background-color: #626366;
-    font-size: 0.875rem;
 }
 
 .waterImage {
@@ -205,13 +207,15 @@ h3 {
     background: url(https://cdn-icons-png.flaticon.com/512/271/271220.png) no-repeat;       
 }
 
-.nextArrowButton, .prevArrowButton {
+.nextArrowButton, 
+.prevArrowButton {
     width: 2rem;
     height: 2rem;
     background-size: 80%;
 }
 
-.nextArrowButton, .prevArrowButton:hover{
+.nextArrowButton, 
+.prevArrowButton:hover{
     cursor: pointer;
 }
 
@@ -236,7 +240,6 @@ h3 {
 }
 
 .inputGroupAddress > div > input {
-    width: 20rem;
     margin: 1rem;
 }
 
@@ -246,15 +249,15 @@ h3 {
 }
 
 .formSubmitButton {
-    border: 2px solid #00aae2;
-    font-weight: bold;
-    color:#00aae2;
+    font-weight: bold;    
     background-color: transparent;
     background-repeat: no-repeat;
     cursor: pointer;
     padding: 0.5rem;
     width: 90%;
     margin-bottom: 1rem;
+    color:#00aae2;
+    border: 2px solid #00aae2;
 }
 
 .footerIcon {
@@ -269,7 +272,8 @@ h3 {
     align-items:  center;
 }
 
-.menuFooterSection1, .socialMediaFooter{
+.menuFooterSection1, 
+.socialMediaFooter{
     background-color: #222222;
 }
 
@@ -284,15 +288,19 @@ h3 {
 }
 
 .menuFooterSectionTitle {
-    color: #ffffff;
     font-size: 0.875rem;
+    color: #ffffff;
 }
-.menuFooterSection1, .menuFooterSection2, .menuFooterSection3, .menuFooterSection4{
+
+.menuFooterSection1,
+.menuFooterSection2, 
+.menuFooterSection3, 
+.menuFooterSection4{
     list-style: none; 
     font-size: 0.75rem;
-    color: #ffffff;
     line-height: 2rem;
     text-align: center;
+    color: #ffffff;
 }
 
 .footer {
@@ -300,8 +308,8 @@ h3 {
 }
 
 .logoFooter {
-    color:#ffffff;
-    font-size: 2rem;    
+    font-size: 2rem;
+    color:#ffffff;    
 }
 
 .logoFooter > ul {
@@ -324,9 +332,10 @@ h3 {
     display: flex;
     justify-content: space-around;
     margin-left: 5rem;
+    gap: 1rem;
     text-decoration: none;
     color: #626366;
-    gap: 1rem;
+    
 }
 .navBarMenuDesktop > li > a {
     text-decoration: none;
@@ -419,13 +428,15 @@ h3 {
     color: #626366;
 }
 
-.inputGroup > div > input, .inputAddress, .inputNumber {
-    border-color: #626366;
-    color: #626366;
+.inputGroup > div > input,
+.inputAddress, 
+.inputNumber {
     height: 2rem;
     margin: 1rem;
     border-width: 1px;   
     border-style: solid;
+    border-color: #626366;
+    color: #626366;
 
 }
 
@@ -434,13 +445,7 @@ h3 {
     width: 20rem;
 }
 
-.inputAddress {
-    width: 30rem;    
-}
 
-.inputNumber {
-    margin-left: 0;    
-}
 
 .formSection > label {
     display: block;
@@ -454,21 +459,21 @@ h3 {
 }
 
 .inputNumberContainer {
-    display: flex;  
-    height: 100%;
-    flex-direction: unset;
-    align-items: center;
-   
+    display: flex; 
+    align-items: center; 
+    height: 100%;   
 }
 
 .inputAddressContainer {
-    width: 80%;
-    display: flex;
+    display: flex;   
+}
+
+.inputAddress {
     width: 30rem;
 }
 
-.inputAddressContainer > input {
-    width: 20rem;
+.inputNumber {
+    width: 10rem;
 }
 
 .inputGroup {
@@ -480,8 +485,7 @@ h3 {
 }
 .inputGroup > div {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;    
 }
 
 .inputGroup > div > input {
@@ -492,8 +496,9 @@ h3 {
 
 .inputGroupAddress {
     display: flex;
-    margin: 0rem;
     justify-content: space-between;
+    margin: 0rem;
+    
 }
 
 .footerContainer {
