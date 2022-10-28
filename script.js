@@ -69,5 +69,8 @@ if(elementToChange.classList[0] === "moreDetailsActive"){
 
 
 
+    
+
+
 
 

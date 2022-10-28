@@ -25,6 +25,10 @@ header > img {
     height: 1rem;
 }
 
+header {
+    padding: 2rem;
+}
+
 ol, ul {
 	list-style: none;
     
@@ -74,6 +78,10 @@ h3 {
     display: none;
 }
 
+.navBarMenuDesktop > li > a:hover {
+    color: #27282a;
+}
+
 .navBarMenu, 
 .navBarMenu > li > a {
     display: none;   
@@ -81,7 +89,11 @@ h3 {
 
 .navBarMenuChangeDisplay, 
 .navBarMenuChangeDisplay > li > a {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    background-color:#cfd1d6;
+    align-items: center;
+    margin: 1rem;
     text-decoration: none;    
     font-size: 0.875rem;
     color: #626366;
@@ -230,19 +242,20 @@ h3 {
     margin: 1rem;
 }
 
-.inputGroup > div > label {
+.inputGroup > div > label, 
+.inputGroupAddress > div > label {
     margin: 1rem
 }
 
-.inputGroupAddress {
+.inputNumber, 
+.inputAddress {
+    margin: 0.5rem;
+    width: 20rem;
     margin: 1rem;    
     color: #626366;
 }
 
-.inputGroupAddress > div > input {
-    margin: 0.5rem;
-    width: 80%;
-}
+
 
 .buttonFormContainer {
     display: flex;
@@ -261,6 +274,12 @@ h3 {
     border: 2px solid #00aae2;
 }
 
+.formSubmitButton:hover {
+    color: #ffffff;
+    background-color: #00aae2;
+
+}
+
 .footerIcon {
     width: 1rem;
     height: 1rem;
@@ -271,6 +290,10 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items:  center;
+}
+
+.socialMediaFooter > ul {
+    padding: 1rem;
 }
 
 .menuFooterSection1, 
@@ -294,12 +317,16 @@ h3 {
     color: #ffffff;
 }
 
-.footerSection{
+.footerSection {
     list-style: none; 
     font-size: 0.75rem;
     line-height: 2rem;
     text-align: center;
     color: #ffffff;
+}
+
+.footerSection > li:hover {
+    cursor: pointer;
 }
 
 .footer {
@@ -315,8 +342,17 @@ h3 {
     gap: 1rem;
 }
 
+.socialMediaFooter > ul{
+    display: flex;
+    gap: 1rem;
+}
+
 .footerContainer {
     width: 100vw;
+}
+
+.noHover {
+    pointer-events: none;
 }
 
 
@@ -406,6 +442,10 @@ h3 {
     padding: 0;
 }
 
+.showProductSpan:hover {
+    color: #0b4e64
+}
+
 .sliderVideo {
     margin: 0;
 }
@@ -456,8 +496,6 @@ h3 {
     width: 20rem;
 }
 
-
-
 .formSection > label {
     display: block;
     width: 10rem;
@@ -467,17 +505,7 @@ h3 {
     width: 15rem;
     height: 2.5rem;
     padding: 0.5rem;    
-}
-
-.inputNumberContainer {
-    display: flex; 
-    align-items: center; 
-    height: 100%;   
-}
-
-.inputAddressContainer {
-    display: flex;   
-}
+} 
 
 .inputAddress {
     width: 30rem;
@@ -507,10 +535,16 @@ h3 {
 
 .inputGroupAddress {
     display: flex;
-    justify-content: space-between;
-    margin: 0rem;
-    
+    justify-content: stretch;
+    width: 100%;
+    margin: 0rem;    
 }
+
+.inputGroupAddress > div {
+    width: 100%;
+}
+
+
 
 .footerContainer {
     display: flex;
@@ -526,7 +560,7 @@ h3 {
 
 .socialMediaFooter {
     width: 20vw;
-    padding: 2rem;  
+    padding: 2rem; 
 
 }
 
@@ -534,8 +568,10 @@ h3 {
     margin: 2rem;
 }
 .socialMediaFooter > ul {  
-    display: flex;
-    justify-content: space-around;  
+    display: flex;    
+}
+.socialMediaFooter > ul > li {  
+    margin: 0    
 }
 
 .footerSection {
