@@ -1,15 +1,23 @@
-const hamburguerMenuMobile = () => {
-    let navBarMenu = document.getElementById("navBarMenuId"); 
+let navBarMenu = document.getElementById("navBarMenuId"); 
+let closeMenuButton = document.getElementsByClassName("closeMenu");
+
+const hamburguerMenuMobile = () => {    
     navBarMenu.classList.add("navBarMenu")
 
     if (navBarMenu.classList[0]=== "navBarMenu") {
         navBarMenu.classList.remove("navBarMenu")
+       
         navBarMenu.classList.add("navBarMenuChangeDisplay")        
     } else {
         navBarMenu.classList.add("navBarMenu")
         navBarMenu.classList.remove("navBarMenuChangeDisplay")
     }
 }
+
+
+
+
+
 
 const preventDefaultFormButton = () => { 
 document.getElementsByClassName("formSubmitButton")
